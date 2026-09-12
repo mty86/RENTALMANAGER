@@ -1,0 +1,551 @@
+{
+  "baseLocation": {
+    "name": "JUQUILITA",
+    "address": "Calle 12 Sur, Tehuacán, Puebla, 75700, México",
+    "phone": "55 9876 5432",
+    "lat": 18.449201608615912,
+    "lng": -97.40436141167693
+  },
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Mesa Redonda (10 Personas)",
+      "category": "Mesas",
+      "price": 120,
+      "totalStock": 40,
+      "availableStock": 38,
+      "description": "Mesa redonda de fibra de vidrio de 1.50m de diámetro, ideal para banquetes de hasta 10 personas.",
+      "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-2",
+      "name": "Mesa Rectangular Tablón (8 Personas)",
+      "category": "Mesas",
+      "price": 95,
+      "totalStock": 50,
+      "availableStock": 50,
+      "description": "Tablón plegable de polietileno de alta densidad de 2.40m x 0.75m para servicio o comensales.",
+      "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-3",
+      "name": "Silla Plegable Acojinada Negra",
+      "category": "Sillas",
+      "price": 18,
+      "totalStock": 300,
+      "availableStock": 290,
+      "description": "Silla metálica reforzada con asiento y respaldo acojinado en vinil negro de alta resistencia.",
+      "imageUrl": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-4",
+      "name": "Silla Tiffany Elegante Blanca",
+      "category": "Sillas",
+      "price": 38,
+      "totalStock": 160,
+      "availableStock": 160,
+      "description": "Silla estilo Tiffany en resina monocasco blanca con cojín desmontable blanco para bodas y galas.",
+      "imageUrl": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-5",
+      "name": "Mantel Redondo Blanco Tergal",
+      "category": "Manteles",
+      "price": 45,
+      "totalStock": 80,
+      "availableStock": 75,
+      "description": "Mantel liso de tergal stretch de 3m de caída para mesa redonda de 10 personas, limpio y planchado.",
+      "imageUrl": "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-6",
+      "name": "Cubremantel / Camino de Mesa Dorado",
+      "category": "Manteles",
+      "price": 25,
+      "totalStock": 70,
+      "availableStock": 70,
+      "description": "Cubremantel en tela tafetán brillante color oro de 1.50m x 1.50m para contraste decorativo.",
+      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-7",
+      "name": "Carpa Plegable 6x3m Impermeable",
+      "category": "Toldos y Carpas",
+      "price": 450,
+      "totalStock": 12,
+      "availableStock": 12,
+      "description": "Toldo carpa de estructura de acero reforzado con lona impermeable blanca, protección UV.",
+      "imageUrl": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-8",
+      "name": "Calentador de Patio Tipo Hongo",
+      "category": "Accesorios",
+      "price": 350,
+      "totalStock": 8,
+      "availableStock": 8,
+      "description": "Calefactor a gas para exteriores en acero inoxidable con tanque de gas LP incluido.",
+      "imageUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "prod-1789184999216",
+      "name": "Iinfable",
+      "category": "Accesorios",
+      "price": 0,
+      "totalStock": 2,
+      "availableStock": 2,
+      "description": "4x4",
+      "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80",
+      "createdAt": "2026-09-12T03:49:59.217Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-5681",
+      "customer": {
+        "name": "Amairany Martinez",
+        "phone": "2382099845",
+        "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+        "reference": "porton negro",
+        "location": {
+          "lat": 18.451509891100493,
+          "lng": -97.405614875866
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T04:20",
+      "returnDate": "2026-09-14T04:20",
+      "notes": "",
+      "status": "entregado",
+      "createdAt": "2026-09-12T04:20:27.344Z",
+      "acceptedAt": "2026-09-12T04:20:30.166Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T04:21:12.799Z",
+      "deliveredBy": "Repartidor"
+    },
+    {
+      "id": "ORD-1051",
+      "customer": {
+        "name": "Amairany Martinez",
+        "phone": "2382099845",
+        "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+        "reference": "porton negro",
+        "location": {
+          "lat": 18.451509891100493,
+          "lng": -97.405614875866
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T04:19",
+      "returnDate": "2026-09-14T04:19",
+      "notes": "",
+      "status": "completado",
+      "createdAt": "2026-09-12T04:19:57.746Z",
+      "acceptedAt": "2026-09-12T04:20:01.420Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T04:20:13.423Z",
+      "deliveredBy": "Repartidor",
+      "completedAt": "2026-09-12T04:20:18.796Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-12T04:20:18.796Z",
+        "inspectedBy": "Personal de Recolección",
+        "itemsStatus": [
+          {
+            "productId": "prod-1",
+            "productName": "Mesa Redonda (10 Personas)",
+            "deliveredQty": 1,
+            "returnedGoodQty": 1,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          }
+        ],
+        "isComplete": true,
+        "totalMissing": 0,
+        "totalDamaged": 0,
+        "settledWithPayment": true,
+        "penaltyAmount": 0,
+        "notes": "Todo el mobiliario recibido completo y verificado."
+      }
+    },
+    {
+      "id": "ORD-3974",
+      "customer": {
+        "name": "Amairany Martinez",
+        "phone": "2382099845",
+        "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+        "reference": "porton negro",
+        "location": {
+          "lat": 18.451509891100493,
+          "lng": -97.405614875866
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T04:19",
+      "returnDate": "2026-09-14T04:19",
+      "notes": "",
+      "status": "cancelado",
+      "createdAt": "2026-09-12T04:19:05.395Z",
+      "cancelledAt": "2026-09-12T04:19:36.798Z",
+      "cancellationReason": "Sin disponibilidad de mobiliario para la fecha solicitada",
+      "notifiedViaWhatsApp": false
+    },
+    {
+      "id": "ORD-102",
+      "customer": {
+        "name": "Andrea Morales Castillo",
+        "phone": "55 2345 6789",
+        "address": "Av. División del Norte #2430, Portales Sur, Benito Juárez",
+        "reference": "Jardín de eventos La Pérgola, portón verde",
+        "location": {
+          "lat": 19.3621,
+          "lng": -99.1554
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 4,
+          "priceUnit": 0,
+          "subtotal": 0
+        },
+        {
+          "productId": "prod-3",
+          "productName": "Silla Plegable Acojinada Negra",
+          "quantity": 40,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-10T11:00",
+      "returnDate": "2026-09-11T11:00",
+      "notes": "Mobiliario entregado para evento. Pendiente de recolección.",
+      "status": "completado",
+      "deliveredAt": "2026-09-10T12:00:00.000Z",
+      "deliveredBy": "Carlos Méndez Juárez",
+      "createdAt": "2026-09-10T10:00:00.000Z",
+      "completedAt": "2026-09-12T03:53:34.774Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-12T03:53:34.774Z",
+        "inspectedBy": "Personal de Recolección",
+        "itemsStatus": [
+          {
+            "productId": "prod-1",
+            "productName": "Mesa Redonda (10 Personas)",
+            "deliveredQty": 4,
+            "returnedGoodQty": 4,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          },
+          {
+            "productId": "prod-3",
+            "productName": "Silla Plegable Acojinada Negra",
+            "deliveredQty": 40,
+            "returnedGoodQty": 40,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          }
+        ],
+        "isComplete": true,
+        "totalMissing": 0,
+        "totalDamaged": 0,
+        "settledWithPayment": true,
+        "penaltyAmount": 0,
+        "notes": "Todo el mobiliario recibido completo y verificado."
+      }
+    },
+    {
+      "id": "ORD-5848",
+      "customer": {
+        "name": "AMAIRANY YATZU SOLIS MARTINEZ",
+        "phone": "2382099845",
+        "address": "hidalgo 1509",
+        "reference": "",
+        "location": {
+          "lat": 18.451507516292704,
+          "lng": -97.40554281557954
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-7",
+          "productName": "Carpa Plegable 6x3m Impermeable",
+          "quantity": 1,
+          "priceUnit": 450,
+          "subtotal": 450
+        }
+      ],
+      "totalAmount": 450,
+      "eventDate": "2026-09-11T20:27",
+      "returnDate": "2026-09-12T20:27",
+      "notes": "",
+      "status": "completado",
+      "createdAt": "2026-09-12T02:27:57.808Z",
+      "acceptedAt": "2026-09-12T03:22:06.996Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T03:22:41.047Z",
+      "deliveredBy": "Repartidor",
+      "completedAt": "2026-09-12T03:23:16.023Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-12T03:23:16.023Z",
+        "inspectedBy": "Personal de Recolección",
+        "itemsStatus": [
+          {
+            "productId": "prod-7",
+            "productName": "Carpa Plegable 6x3m Impermeable",
+            "deliveredQty": 1,
+            "returnedGoodQty": 1,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          }
+        ],
+        "isComplete": true,
+        "totalMissing": 0,
+        "totalDamaged": 0,
+        "settledWithPayment": true,
+        "penaltyAmount": 0,
+        "notes": "Todo el mobiliario recibido completo y verificado."
+      }
+    },
+    {
+      "id": "ORD-101",
+      "customer": {
+        "name": "María Fernanda Gómez",
+        "phone": "55 4123 7890",
+        "address": "Calle Río Mixcoac #145, Col. Florida, Álvaro Obregón",
+        "reference": "Casa de 2 pisos con cancel negro y timbre dorado",
+        "location": {
+          "lat": 19.3598,
+          "lng": -99.1834
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 5,
+          "priceUnit": 120,
+          "subtotal": 600
+        },
+        {
+          "productId": "prod-3",
+          "productName": "Silla Plegable Acojinada Negra",
+          "quantity": 50,
+          "priceUnit": 18,
+          "subtotal": 900
+        },
+        {
+          "productId": "prod-5",
+          "productName": "Mantel Redondo Blanco Tergal",
+          "quantity": 5,
+          "priceUnit": 45,
+          "subtotal": 225
+        }
+      ],
+      "totalAmount": 1725,
+      "eventDate": "2026-09-12T15:00",
+      "returnDate": "2026-09-13T12:00",
+      "notes": "Favor de entregar el sábado a las 11:00 AM para preparar montaje.",
+      "status": "completado",
+      "createdAt": "2026-09-08T14:30:00.000Z",
+      "acceptedAt": "2026-09-12T03:21:12.358Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T03:23:18.342Z",
+      "deliveredBy": "Repartidor",
+      "completedAt": "2026-09-12T03:24:27.274Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-12T03:24:27.274Z",
+        "inspectedBy": "Personal de Recolección",
+        "itemsStatus": [
+          {
+            "productId": "prod-1",
+            "productName": "Mesa Redonda (10 Personas)",
+            "deliveredQty": 5,
+            "returnedGoodQty": 5,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          },
+          {
+            "productId": "prod-3",
+            "productName": "Silla Plegable Acojinada Negra",
+            "deliveredQty": 50,
+            "returnedGoodQty": 50,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          },
+          {
+            "productId": "prod-5",
+            "productName": "Mantel Redondo Blanco Tergal",
+            "deliveredQty": 5,
+            "returnedGoodQty": 5,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          }
+        ],
+        "isComplete": true,
+        "totalMissing": 0,
+        "totalDamaged": 0,
+        "settledWithPayment": true,
+        "penaltyAmount": 0,
+        "notes": "Todo el mobiliario recibido completo y verificado."
+      }
+    },
+    {
+      "id": "ORD-100",
+      "customer": {
+        "name": "Roberto Soto Aguilar",
+        "phone": "55 8899 2211",
+        "address": "Av. Universidad #820, Santa Cruz Atoyac, Benito Juárez",
+        "reference": "Edificio Residencial Torre B, acceso por caseta",
+        "location": {
+          "lat": 19.3789,
+          "lng": -99.1622
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-4",
+          "productName": "Silla Tiffany Elegante Blanca",
+          "quantity": 20,
+          "priceUnit": 38,
+          "subtotal": 760
+        }
+      ],
+      "totalAmount": 760,
+      "eventDate": "2026-09-06T19:00",
+      "returnDate": "2026-09-07T10:00",
+      "notes": "Evento en el salón comunal.",
+      "status": "completado",
+      "createdAt": "2026-09-05T10:00:00.000Z",
+      "acceptedAt": "2026-09-05T11:15:00.000Z",
+      "deliveredAt": "2026-09-06T16:00:00.000Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-07T11:30:00.000Z",
+        "inspectedBy": "Carlos M. (Logística)",
+        "itemsStatus": [
+          {
+            "productId": "prod-4",
+            "productName": "Silla Tiffany Elegante Blanca",
+            "deliveredQty": 20,
+            "returnedQty": 20,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": "Todo recibido en óptimas condiciones y limpio."
+          }
+        ],
+        "isComplete": true,
+        "penaltyFee": 0,
+        "notes": "Recogida exitosa a tiempo."
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1789183207454",
+      "name": "Amairany Martinez",
+      "phone": "2382099845",
+      "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+      "reference": "porton negro",
+      "notes": "",
+      "location": {
+        "lat": 18.451509891100493,
+        "lng": -97.405614875866
+      },
+      "registeredBy": "Empleado",
+      "updatedAt": "2026-09-12T03:20:07.455Z",
+      "createdAt": "2026-09-12T03:20:07.455Z"
+    },
+    {
+      "id": "cust-2",
+      "name": "Roberto Soto Aguilar",
+      "phone": "5588992211",
+      "address": "Av. Universidad #820, Santa Cruz Atoyac, Benito Juárez",
+      "reference": "Edificio Residencial Torre B, acceso por caseta",
+      "location": {
+        "lat": 19.3789,
+        "lng": -99.1622
+      },
+      "registeredBy": "Personal de Logística",
+      "createdAt": "2026-09-02T11:20:00.000Z"
+    },
+    {
+      "id": "cust-3",
+      "name": "Andrea Morales Castillo",
+      "phone": "5523456789",
+      "address": "Av. División del Norte #2430, Portales Sur, Benito Juárez",
+      "reference": "Jardín de eventos La Pérgola, portón verde",
+      "location": {
+        "lat": 19.3621,
+        "lng": -99.1554
+      },
+      "registeredBy": "Empleado Mostrador",
+      "createdAt": "2026-09-05T09:15:00.000Z"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-1",
+      "name": "Carlos Méndez Juárez",
+      "phone": "5591234567",
+      "email": "carlos.mendez@rentalmanager.com",
+      "role": "Chofer y Repartidor",
+      "status": "activo",
+      "licensePlate": "NLK-892-A",
+      "assignedVehicle": "Camioneta Ford Transit 2023",
+      "createdAt": "2026-08-15T08:00:00.000Z"
+    },
+    {
+      "id": "emp-2",
+      "name": "Laura Morales Trejo",
+      "phone": "5598761234",
+      "email": "laura.morales@rentalmanager.com",
+      "role": "Encargada de Logística y Pedidos",
+      "status": "activo",
+      "createdAt": "2026-08-10T08:30:00.000Z"
+    },
+    {
+      "id": "emp-3",
+      "name": "Miguel Ángel Rivas",
+      "phone": "5595557788",
+      "email": "miguel.rivas@rentalmanager.com",
+      "role": "Auditor y Control de Almacén",
+      "status": "activo",
+      "createdAt": "2026-08-20T09:00:00.000Z"
+    }
+  ]
+}
