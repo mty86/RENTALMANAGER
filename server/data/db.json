@@ -13,7 +13,7 @@
       "category": "Mesas",
       "price": 120,
       "totalStock": 40,
-      "availableStock": 38,
+      "availableStock": 37,
       "description": "Mesa redonda de fibra de vidrio de 1.50m de diámetro, ideal para banquetes de hasta 10 personas.",
       "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=80"
     },
@@ -100,6 +100,155 @@
     }
   ],
   "orders": [
+    {
+      "id": "ORD-7837",
+      "customer": {
+        "name": "mi novia",
+        "phone": "2382081708",
+        "address": "Calle 16 de Septiembre, Tehuacán, Puebla, 75855, México",
+        "reference": "saguan verde",
+        "location": {
+          "lat": 18.476078079353755,
+          "lng": -97.42018101347507
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T06:02",
+      "returnDate": "2026-09-14T06:02",
+      "notes": "",
+      "status": "entregado",
+      "createdAt": "2026-09-12T06:02:23.550Z",
+      "acceptedAt": "2026-09-12T06:02:31.256Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T06:03:47.821Z",
+      "deliveredBy": "Repartidor"
+    },
+    {
+      "id": "ORD-6853",
+      "customer": {
+        "name": "Amairany Martinez",
+        "phone": "2382099845",
+        "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+        "reference": "porton negro",
+        "location": {
+          "lat": 18.451509891100493,
+          "lng": -97.405614875866
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T05:59",
+      "returnDate": "2026-09-14T05:59",
+      "notes": "",
+      "status": "cancelado",
+      "createdAt": "2026-09-12T05:59:02.598Z",
+      "cancelledAt": "2026-09-12T05:59:25.086Z",
+      "cancellationReason": "Horario no compatible con nuestra ruta de entregas del día",
+      "notifiedViaWhatsApp": false
+    },
+    {
+      "id": "ORD-9569",
+      "customer": {
+        "name": "Amairany Martinez",
+        "phone": "2382099845",
+        "address": "Calle Miguel Hidalgo, Tehuacán, Puebla, 75700, México",
+        "reference": "porton negro",
+        "location": {
+          "lat": 18.451509891100493,
+          "lng": -97.405614875866
+        }
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Mesa Redonda (10 Personas)",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        },
+        {
+          "productId": "prod-6",
+          "productName": "Cubremantel / Camino de Mesa Dorado",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        },
+        {
+          "productId": "prod-5",
+          "productName": "Mantel Redondo Blanco Tergal",
+          "quantity": 1,
+          "priceUnit": 0,
+          "subtotal": 0
+        }
+      ],
+      "totalAmount": 0,
+      "eventDate": "2026-09-13T05:55",
+      "returnDate": "2026-09-14T05:55",
+      "notes": "",
+      "status": "completado",
+      "createdAt": "2026-09-12T05:55:41.996Z",
+      "acceptedAt": "2026-09-12T05:56:07.093Z",
+      "acceptedBy": "Personal de Logística",
+      "deliveredAt": "2026-09-12T05:57:05.715Z",
+      "deliveredBy": "Repartidor",
+      "completedAt": "2026-09-12T05:58:27.352Z",
+      "pickupReport": {
+        "inspectedAt": "2026-09-12T05:58:27.352Z",
+        "inspectedBy": "Personal de Recolección",
+        "itemsStatus": [
+          {
+            "productId": "prod-1",
+            "productName": "Mesa Redonda (10 Personas)",
+            "deliveredQty": 1,
+            "returnedGoodQty": 1,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          },
+          {
+            "productId": "prod-6",
+            "productName": "Cubremantel / Camino de Mesa Dorado",
+            "deliveredQty": 1,
+            "returnedGoodQty": 1,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          },
+          {
+            "productId": "prod-5",
+            "productName": "Mantel Redondo Blanco Tergal",
+            "deliveredQty": 1,
+            "returnedGoodQty": 1,
+            "damagedQty": 0,
+            "missingQty": 0,
+            "notes": ""
+          }
+        ],
+        "isComplete": true,
+        "totalMissing": 0,
+        "totalDamaged": 0,
+        "settledWithPayment": true,
+        "penaltyAmount": 0,
+        "notes": "Todo el mobiliario recibido completo y verificado."
+      }
+    },
     {
       "id": "ORD-5681",
       "customer": {
@@ -475,6 +624,21 @@
     }
   ],
   "customers": [
+    {
+      "id": "cust-1789192924372",
+      "name": "mi novia",
+      "phone": "2382081708",
+      "address": "Calle 16 de Septiembre, Tehuacán, Puebla, 75855, México",
+      "reference": "saguan verde",
+      "notes": "enfrente de una tienda",
+      "location": {
+        "lat": 18.476078079353755,
+        "lng": -97.42018101347507
+      },
+      "registeredBy": "Empleado",
+      "updatedAt": "2026-09-12T06:02:04.373Z",
+      "createdAt": "2026-09-12T06:02:04.373Z"
+    },
     {
       "id": "cust-1789183207454",
       "name": "Amairany Martinez",

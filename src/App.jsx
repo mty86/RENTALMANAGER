@@ -1,5 +1,6 @@
 import Sidebar from './components/Sidebar';
 import LoginScreen from './components/LoginScreen';
+import MobileBottomNav from './components/MobileBottomNav';
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import NotificationSidebar from './components/NotificationSidebar';
@@ -106,6 +107,8 @@ export default function App() {
     return 'superadmin';
   }); // Default to superadmin to showcase the requested dashboard
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+  const [isMobileAlertsOpen, setIsMobileAlertsOpen] = useState(false);
   const [activeNavTab, setActiveNavTab] = useState('dashboard');
   const [globalSearch, setGlobalSearch] = useState(''); // 'cliente' | 'empleado' | 'superadmin'
   const [employeeTab, setEmployeeTab] = useState('pedidos'); // 'pedidos' | 'clientes' | 'inventario' | 'historial'
@@ -589,12 +592,14 @@ export default function App() {
         onToggleCollapse={() => setIsSidebarCollapsed((prev) => !prev)}
         currentUser={currentUser}
         onLogout={handleLogout}
+        isOpenMobile={isMobileSidebarOpen}
+        onCloseMobile={() => setIsMobileSidebarOpen(false)}
       />
 
       {/* Main Content Area Shifted by Sidebar Width (Left) and Permanent Alerts Panel (Right) */}
-      <div className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ${
+      <div className={`flex-1 flex flex-col min-w-0 transition-all duration-300 ml-0 ${
         isSidebarCollapsed ? 'md:ml-20' : 'md:ml-64'
-      } lg:mr-80 xl:mr-96`}>
+      } lg:mr-80 xl:mr-96 pb-20 md:pb-6`}>
       {/* Toast notification */}
       {toastMessage && (
         <div className="fixed top-5 right-5 z-50 animate-slideDown">
@@ -628,6 +633,8 @@ export default function App() {
         onSearchChange={setGlobalSearch}
         currentUser={currentUser}
         onLogout={handleLogout}
+        onToggleMobileSidebar={() => setIsMobileSidebarOpen((prev) => !prev)}
+        onToggleMobileAlerts={() => setIsMobileAlertsOpen((prev) => !prev)}
       />
 
       {/* Connection error banner if any */}
@@ -757,9 +764,34 @@ export default function App() {
         onMarkAllAsRead={handleMarkAllAsRead}
         onClearAll={handleClearAll}
         onDeleteNotification={handleDeleteNotification}
-        onNavigateToOrder={handleNavigateToOrder}
+        onNavigateToOrder={(orderId) => {
+          handleNavigateToOrder(orderId);
+          setIsMobileAlertsOpen(false);
+        }}
         soundEnabled={soundEnabled}
         onToggleSound={toggleSound}
+        isOpenMobile={isMobileAlertsOpen}
+        onCloseMobile={() => setIsMobileAlertsOpen(false)}
+      />
+
+      {/* Mobile Bottom Navigation Bar (< 768px) */}
+      <MobileBottomNav
+        role={role}
+        activeNavTab={activeNavTab}
+        onTabChange={handleSidebarTabChange}
+        clientTab={clientTab}
+        onClientTabChange={(t) => {
+          setClientTab(t);
+          setActiveNavTab('inventario');
+        }}
+        employeeTab={employeeTab}
+        onEmployeeTabChange={(t) => {
+          setEmployeeTab(t);
+          setActiveNavTab(t === 'pedidos' ? 'pedidos' : t === 'clientes' ? 'clientes' : 'inventario');
+        }}
+        unreadAlertsCount={unreadNotificationsCount}
+        onToggleAlerts={() => setIsMobileAlertsOpen((prev) => !prev)}
+        onToggleMenu={() => setIsMobileSidebarOpen((prev) => !prev)}
       />
     </div>
   );

@@ -381,7 +381,7 @@ export default function ClientView({
       {activeTab === 'catalogo' && (
         <div className="space-y-6">
           {/* Categories Pill Bar */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none touch-pan-x">
             {categories.map((category) => (
               <button
                 key={category}
@@ -448,7 +448,7 @@ export default function ClientView({
           </div>
 
           {/* Filter Pills for the Client */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs scrollbar-none touch-pan-x">
             <button
               onClick={() => setOrderFilter('todas')}
               className={`px-3.5 py-1.5 rounded-xl font-bold transition-all whitespace-nowrap ${
@@ -690,7 +690,7 @@ export default function ClientView({
 
       {/* Floating Bottom Cart Bar (When items are in cart) */}
       {totalItemCount > 0 && activeTab === 'catalogo' && (
-        <div className="fixed bottom-4 left-4 right-4 max-w-2xl mx-auto z-40 bg-[#0b0e1b]/95 text-white rounded-3xl p-4 shadow-glow-pink border border-neon-pink/50 backdrop-blur-md flex items-center justify-between gap-4 animate-slideUp">
+        <div className="fixed bottom-20 md:bottom-4 left-3 right-3 sm:left-4 sm:right-4 max-w-2xl mx-auto z-40 bg-[#0b0e1b]/95 text-white rounded-3xl p-3 sm:p-4 shadow-glow-pink border border-neon-pink/50 backdrop-blur-md flex items-center justify-between gap-3 sm:gap-4 animate-slideUp">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-2xl bg-neon-pink text-white flex items-center justify-center font-black text-sm shadow-glow-pink">
               {totalItemCount}
