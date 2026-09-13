@@ -1,6 +1,7 @@
 import Sidebar from './components/Sidebar';
 import LoginScreen from './components/LoginScreen';
 import MobileBottomNav from './components/MobileBottomNav';
+import InstallPwaModal from './components/InstallPwaModal';
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import NotificationSidebar from './components/NotificationSidebar';
@@ -109,6 +110,7 @@ export default function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const [isMobileAlertsOpen, setIsMobileAlertsOpen] = useState(false);
+  const [isInstallModalOpen, setIsInstallModalOpen] = useState(false);
   const [activeNavTab, setActiveNavTab] = useState('dashboard');
   const [globalSearch, setGlobalSearch] = useState(''); // 'cliente' | 'empleado' | 'superadmin'
   const [employeeTab, setEmployeeTab] = useState('pedidos'); // 'pedidos' | 'clientes' | 'inventario' | 'historial'
@@ -594,6 +596,7 @@ export default function App() {
         onLogout={handleLogout}
         isOpenMobile={isMobileSidebarOpen}
         onCloseMobile={() => setIsMobileSidebarOpen(false)}
+        onOpenInstallModal={() => setIsInstallModalOpen(true)}
       />
 
       {/* Main Content Area Shifted by Sidebar Width (Left) and Permanent Alerts Panel (Right) */}
@@ -635,6 +638,7 @@ export default function App() {
         onLogout={handleLogout}
         onToggleMobileSidebar={() => setIsMobileSidebarOpen((prev) => !prev)}
         onToggleMobileAlerts={() => setIsMobileAlertsOpen((prev) => !prev)}
+        onOpenInstallModal={() => setIsInstallModalOpen(true)}
       />
 
       {/* Connection error banner if any */}
@@ -792,6 +796,11 @@ export default function App() {
         unreadAlertsCount={unreadNotificationsCount}
         onToggleAlerts={() => setIsMobileAlertsOpen((prev) => !prev)}
         onToggleMenu={() => setIsMobileSidebarOpen((prev) => !prev)}
+      />
+      {/* PWA Install / Download Web App Modal */}
+      <InstallPwaModal
+        isOpen={isInstallModalOpen}
+        onClose={() => setIsInstallModalOpen(false)}
       />
     </div>
   );

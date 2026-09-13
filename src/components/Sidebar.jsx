@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Download,
   LayoutDashboard,
   CalendarDays,
   Package,
@@ -25,6 +26,7 @@ export default function Sidebar({
   onToggleCollapse,
   currentUser,
   onLogout,
+  onOpenInstallModal,
   isOpenMobile = false,
   onCloseMobile
 }) {
@@ -226,6 +228,20 @@ export default function Sidebar({
                 </div>
                 <span className="text-[10px] font-mono text-neon-cyan">v2.4 Pro</span>
               </div>
+              {onOpenInstallModal && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (onCloseMobile) onCloseMobile();
+                    onOpenInstallModal();
+                  }}
+                  className="w-full py-1.5 px-2.5 bg-neon-pink/15 hover:bg-neon-pink/25 text-neon-pink border border-neon-pink/30 hover:border-neon-pink/60 rounded-xl text-[11px] font-bold flex items-center justify-center gap-1.5 shadow-glow-pink transition-all mb-2"
+                  title="Descargar como App Web"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Descargar App Web</span>
+                </button>
+              )}
               <div className="text-[10px] text-slate-500 font-mono truncate">
                 Modo: <span className="text-slate-300 capitalize">{currentRole}</span>
               </div>

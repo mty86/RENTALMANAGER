@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Download,
   Sparkles,
   User,
   Briefcase,
@@ -23,7 +24,8 @@ export default function Navbar({
   currentUser,
   onLogout,
   onToggleMobileSidebar,
-  onToggleMobileAlerts
+  onToggleMobileAlerts,
+  onOpenInstallModal
 }) {
   return (
     <header className="sticky top-0 z-30 bg-[#0b0e1b]/95 backdrop-blur-xl border-b border-[#1a223c] shadow-xl">
@@ -124,6 +126,18 @@ export default function Navbar({
                 </span>
               )}
             </button>
+
+            {/* Download / Install PWA Button */}
+            {onOpenInstallModal && (
+              <button
+                onClick={onOpenInstallModal}
+                className="flex items-center gap-1.5 px-2.5 py-1.5 bg-[#12172b] hover:bg-neon-pink/20 hover:border-neon-pink/50 text-slate-300 hover:text-white border border-[#1e2642] rounded-xl text-xs font-bold transition-all shrink-0"
+                title="Descargar como Aplicación Web (PWA)"
+              >
+                <Download className="w-3.5 h-3.5 text-neon-pink" />
+                <span className="hidden xl:inline text-[11px]">Descargar App</span>
+              </button>
+            )}
 
             {/* Sync Refresh Button */}
             <button
