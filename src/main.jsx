@@ -9,13 +9,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 );
 
-// Register Service Worker for PWA (download/install as web app)
+// Register Service Worker for PWA with auto-update
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then((reg) => {
-      console.log('Rental Manager Service Worker registered successfully:', reg.scope);
+      console.log('Rental Manager Pro Service Worker active:', reg.scope);
+      // Check for updates periodically
+      reg.addEventListener('updatefound', () => {
+        const newWorker = reg.installing;
+        if (newWorker) {
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              console.log('New version of Rental Manager Pro installed, refreshing...');
+              window.location.reload();
+            }
+          });
+        }
+      });
     }).catch((err) => {
-      console.warn('Service Worker registration skipped or failed:', err);
+      console.warn('Service Worker registration failed:', err);
     });
   });
 }
