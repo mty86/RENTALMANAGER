@@ -287,18 +287,18 @@ export default function MapSelector({ initialLocation, initialAddress, onLocatio
       )}
 
       {/* Map Container */}
-      <div className="relative rounded-2xl overflow-hidden border-2 border-slate-200 shadow-inner">
+      <div className="relative rounded-2xl overflow-hidden border-2 border-[#1e2642] shadow-inner">
         <div ref={mapContainerRef} style={{ height: '280px', width: '100%' }} />
 
         {/* Pin Helper Tag */}
-        <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-medium text-slate-700 shadow-sm border border-slate-200 pointer-events-none flex items-center gap-1.5">
+        <div className="absolute top-2 left-2 bg-[#0b0e1b]/90 backdrop-blur-sm px-2.5 py-1 rounded-lg text-[11px] font-medium text-slate-200 shadow-sm border border-[#1e2642] pointer-events-none flex items-center gap-1.5">
           <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
           Haz clic o arrastra el pin hasta tu portón o entrada
         </div>
       </div>
 
       {/* Selected Coordinates & Address Preview */}
-      <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+      <div className="bg-[#0b0e1b] border border-[#1e2642] rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-300">
         <div className="flex items-start gap-2">
           <MapPin className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
           <div>
